@@ -67,17 +67,17 @@ public class Health : MonoBehaviour {
 	
 	public void ApplyDamage(float amount)
 	{	
-		healthPoints = healthPoints - amount;	
+		healthPoints -= amount;	
 	}
 	
 	public void ApplyHeal(float amount)
 	{
-		healthPoints = healthPoints + amount;
+		healthPoints += amount;
 	}
 
 	public void ApplyBonusLife(int amount)
 	{
-		numberOfLives = numberOfLives + amount;
+		numberOfLives += amount;
 	}
 	
 	public void updateRespawn(Vector3 newRespawnPosition, Quaternion newRespawnRotation) {
